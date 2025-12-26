@@ -6,13 +6,29 @@ body { font-family: 'Poppins', sans-serif; background: #000; color: #fff; overfl
     position: fixed; top: 0; left: 0; width: 100%; height: 100%;
     background: #000; z-index: 9999; display: flex; align-items: center; justify-content: center;
 }
-.start-box { text-align: center; border: 3px solid #ff0000; padding: 50px; background: rgba(255,0,0,0.1); }
-.start-box h1 { font-family: 'Bebas Neue', sans-serif; font-size: 4rem; color: #ff0000; margin-bottom: 20px; }
-.btn-start { 
-    background: #ff0000; border: none; padding: 15px 40px; color: #fff; 
-    font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; cursor: pointer; transition: 0.3s;
+.start-box { 
+    text-align: center; 
+    border: 3px solid #ff69b4; /* Berubah jadi Pink */
+    padding: 50px; 
+    background: rgba(255, 105, 180, 0.1); /* Background box transparan pink */
 }
-.btn-start:hover { transform: scale(1.1); box-shadow: 0 0 20px #ff0000; }
+.start-box h1 { 
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 4rem; 
+    color: #ff69b4; /* Tulisan jadi Pink */
+    margin-bottom: 20px; 
+}
+.btn-start { 
+    background: #ff69b4; /* Tombol jadi Pink */
+    border: none; 
+    padding: 15px 40px; 
+    color: #fff; 
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 1.5rem; 
+    cursor: pointer; 
+    transition: 0.3s;
+}
+.btn-start:hover { transform: scale(1.1); box-shadow: 0 0 20px #ff69b4; }
 
 /* BG SLIDER */
 .bg-slider { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; }
@@ -24,16 +40,32 @@ body { font-family: 'Poppins', sans-serif; background: #000; color: #fff; overfl
 
 /* HERO */
 .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
-.main-title { font-family: 'Bebas Neue', sans-serif; font-size: 6rem; text-shadow: 4px 4px #ff0000; letter-spacing: 5px; }
-.red-divider { width: 150px; height: 5px; background: #ff0000; margin: 20px auto; }
+.main-title { 
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 6rem; 
+    text-shadow: 4px 4px #ff69b4; /* Bayangan tulisan jadi Pink */
+    letter-spacing: 5px; 
+}
+.red-divider { 
+    width: 150px; 
+    height: 5px; 
+    background: #ff69b4; /* Garis pembatas jadi Pink */
+    margin: 20px auto; 
+}
 
 /* BUTTONS */
 .btn-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding-bottom: 50px; }
 .btn-ado { 
-    background: transparent; border: 2px solid #ff0000; color: #ff0000; 
-    padding: 15px 30px; font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; cursor: pointer; transition: 0.3s;
+    background: transparent; 
+    border: 2px solid #ff69b4; /* Border tombol jadi Pink */
+    color: #ff69b4; /* Tulisan tombol jadi Pink */
+    padding: 15px 30px; 
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    transition: 0.3s;
 }
-.btn-ado:hover { background: #ff0000; color: #fff; transform: skewX(-10deg); box-shadow: 5px 5px 0 #fff; }
+.btn-ado:hover { background: #ff69b4; color: #fff; transform: skewX(-10deg); box-shadow: 5px 5px 0 #fff; }
 
 /* MODAL */
 .modal { 
@@ -41,14 +73,42 @@ body { font-family: 'Poppins', sans-serif; background: #000; color: #fff; overfl
     background: rgba(0,0,0,0.9); z-index: 2000; justify-content: center; align-items: center; 
 }
 .modal-content { 
-    background: #000; border-left: 8px solid #ff0000; padding: 50px; width: 90%; max-width: 500px; text-align: center;
+    background: #000; 
+    border-left: 8px solid #ff69b4; /* Garis samping modal jadi Pink */
+    padding: 50px; 
+    width: 90%; 
+    max-width: 500px; 
+    text-align: center;
     animation: slideIn 0.5s ease-out;
 }
 @keyframes slideIn { from { transform: translateX(-100px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
 .ppt-el { opacity: 0; animation: fadeIn 0.5s forwards; }
-.modal-content h3 { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: #ff0000; animation-delay: 0.3s; }
+.modal-content h3 { 
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 3rem; 
+    color: #ff69b4; /* Judul modal jadi Pink */
+    animation-delay: 0.3s; 
+}
 .modal-content p { animation-delay: 0.6s; margin-top: 15px; }
 @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
 
-.music-controller { position: fixed; top: 20px; right: 20px; z-index: 1000; background: #ff0000; color: #fff; padding: 10px 20px; font-weight: bold; cursor: pointer; border: 2px solid #fff; }
-.close { position: absolute; top: 10px; right: 20px; font-size: 30px; cursor: pointer; color: #ff0000; }
+.music-controller { 
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+    background: #ff69b4; /* Kotak musik jadi Pink */
+    color: #fff; 
+    padding: 10px 20px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    border: 2px solid #fff; 
+}
+.close { 
+    position: absolute; 
+    top: 10px; 
+    right: 20px; 
+    font-size: 30px; 
+    cursor: pointer; 
+    color: #ff69b4; /* Tombol tutup jadi Pink */
+}
